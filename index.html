@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="My personal professional portfolio, projects and achievements.">
+  <title>My Portfolio | Professional Profile</title>
+
+  <style>
+    :root {
+      --green: #244b37;
+      --light-green: #e3eadf;
+      --cream: #f7f5ed;
+      --text: #29382e;
+      --white: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: var(--cream);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    header {
+      background: var(--green);
+      color: white;
+      padding: 20px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    header h2 { font-size: 22px; }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    nav a:hover { color: #d5e5c9; }
+
+    .hero {
+      padding: 100px 8%;
+      text-align: center;
+      background: var(--light-green);
+    }
+
+    .hero h1 {
+      font-size: clamp(34px, 6vw, 58px);
+      color: var(--green);
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      max-width: 650px;
+      margin: 0 auto 25px;
+      font-size: 18px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: var(--green);
+      color: white;
+      padding: 12px 25px;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+
+    section {
+      padding: 65px 8%;
+      scroll-margin-top: 20px;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 32px;
+      color: var(--green);
+      margin-bottom: 30px;
+    }
+
+    .about {
+      max-width: 750px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 22px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 3px 12px #0000000c;
+    }
+
+    .card h3 {
+      color: var(--green);
+      margin-bottom: 10px;
+    }
+
+    .gallery-placeholder {
+      min-height: 140px;
+      background: var(--light-green);
+      border-radius: 8px;
+      display: grid;
+      place-items: center;
+      color: var(--green);
+      margin-bottom: 15px;
+    }
+
+    .contact {
+      background: var(--light-green);
+      text-align: center;
+    }
+
+    footer {
+      background: var(--green);
+      color: white;
+      text-align: center;
+      padding: 22px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        justify-content: center;
+        text-align: center;
+      }
+
+      nav {
+        justify-content: center;
+        gap: 12px;
+      }
+
+      .hero { padding: 65px 6%; }
+
+      section { padding: 45px 6%; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h2>MY PORTFOLIO</h2>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#blog">Blog</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="hero" id="home">
+    <h1>Building Ideas. Creating Impact.</h1>
+    <p>
+      Welcome to my personal portfolio.
+      Explore my professional journey, projects,
+      skills and achievements.
+    </p>
+    <a href="#projects" class="btn">Explore My Work</a>
+  </div>
+
+  <section id="about">
+    <h2 class="section-title">About Me</h2>
+    <div class="about">
+      <p>
+        Hello and welcome! This is my personal space
+        to share my professional background, interests,
+        experiences and accomplishments.
+        More about me will be added soon.
+      </p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2 class="section-title">My Projects</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Project One</h3>
+        <p>Details about my first project will appear here.</p>
+      </div>
+      <div class="card">
+        <h3>Project Two</h3>
+        <p>Details about my second project will appear here.</p>
+      </div>
+      <div class="card">
+        <h3>Project Three</h3>
+        <p>Details about my third project will appear here.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="achievements">
+    <h2 class="section-title">My Achievements</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Professional Experience</h3>
+        <p>My professional milestones and experience.</p>
+      </div>
+      <div class="card">
+        <h3>Certifications</h3>
+        <p>My courses, training and certifications.</p>
+      </div>
+      <div class="card">
+        <h3>Recognition</h3>
+        <p>My awards and personal accomplishments.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <h2 class="section-title">Photo Gallery</h2>
+    <div class="cards">
+      <div class="card">
+        <div class="gallery-placeholder">Photo 1</div>
+        <p>My photographs and memories.</p>
+      </div>
+      <div class="card">
+        <div class="gallery-placeholder">Photo 2</div>
+        <p>My projects and activities.</p>
+      </div>
+      <div class="card">
+        <div class="gallery-placeholder">Photo 3</div>
+        <p>More pictures coming soon.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="blog">
+    <h2 class="section-title">My Blog</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>My First Blog Post</h3>
+        <p>Stories, experiences and ideas coming soon.</p>
+      </div>
+      <div class="card">
+        <h3>My Professional Journey</h3>
+        <p>Sharing lessons and experiences.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2 class="section-title">Let's Connect</h2>
+    <p>
+      Thank you for visiting my portfolio.
+      I would love to hear from you.
+    </p>
+    <p style="margin-top:20px;">
+      <a class="btn" href="mailto:YOUR_EMAIL@example.com">
+        Contact Me
+      </a>
+    </p>
+  </section>
+
+  <footer>
+    <p>© 2026 My Portfolio. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
